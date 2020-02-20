@@ -5,6 +5,8 @@ import Netflix from './services/netflix';
 import YouTube from './services/youtube';
 import Lingualeo from "./learning-services/lingualeo";
 import PuzzleEnglish from "./learning-services/PuzzleEnglish";
+import LocalDict from "./learning-services/local.ts";
+
 import Video from "./video";
 
 const keyboardEvents = ["keyup", "keydown", "keypress"];
@@ -50,6 +52,8 @@ class Utils {
         return new Lingualeo()
       case "puzzle-english":
         return new PuzzleEnglish()
+      case "local-dict":
+        return new LocalDict()
       default:
         return null;
     }

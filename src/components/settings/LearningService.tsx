@@ -15,6 +15,10 @@ const services = [
   {
     label: "Puzzle English",
     value: "puzzle-english"
+  },
+  {
+    label: "Local Disct",
+    value: "local-dict"
   }
   // {
   //   label: "Quizlet",
